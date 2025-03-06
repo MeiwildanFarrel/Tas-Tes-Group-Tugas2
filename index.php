@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menara Pandang Teratai</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         function myFunction() {
-            var x;
-            var r = confirm("Press OK or Cancel button");
-            if (r == true) {
-                x = "You pressed OK!";
-            }
-            else {
-                x = "You pressed Cancel!";
-            }
-            document.getElementById("demo").innerHTML = x;
+            Swal.fire({
+                title: 'Meiwildan Muhammad Farrel',
+                html: "<p>NIM: 2311103073</p><p>Kelas: SI07-E</p><p>Email:2311103073@ittelkom-pwt.ac.id</p>",
+                showCancelButton: true,
+                confirmButtonText: 'OK',
+                cancelButtonText: 'Close'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    document.getElementById("demo").innerHTML = "You pressed OK!";
+                } else {
+                    document.getElementById("demo").innerHTML = "You pressed Cancel!";
+                }
+            });
         }
     </script>
 </head>
@@ -44,8 +52,8 @@
                     keindahan kota Purwokerto di monumen tertinggi kota satria.</p>
             </div>
             <div class="hero-buttons">
-                <button>Pesan Tiket</button>
-                <button>Lihat Sejarah</button>
+                <button onclick="myFunction()">Pesan Tiket</button>
+                <button onclick="myFunction()">Lihat Sejarah</button>
             </div>
 
         </section>
@@ -58,12 +66,12 @@
             <div class="row">
                 <div class="column">
                     <div class="card">
-                        <img src=""" alt=" Jane" style="width:100%">
+                        <img src="images/farrel.jpg" alt="Farrel" style="width:100%">
                         <div class="container">
-                            <h2>Jane Doe</h2>
-                            <p class="title">CEO & Founder</p>
+                            <h2>Meiwildan Muhammad Farrel</h2>
+                            <h3 class="title">UI/UX and Server</h3>
 
-                            <p><button class="button">Contact</button></p>
+                            <p><button onclick="myFunction()" class="button">Contact</button></p>
                         </div>
                     </div>
                 </div>
@@ -94,7 +102,6 @@
         </section>
 
     </main>
-
 
 </body>
 
