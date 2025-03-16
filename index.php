@@ -1,12 +1,12 @@
 <?php
 $anggotaTim = [
     [
-        'name' => 'Meiwildan Muhammad Farrel',
-        'title' => 'UI/UX and Server',
-        'image' => 'images/farrel.jpg',
-        'nim' => '2311103073',
+        'name' => 'Dedy Tigor Manurung',
+        'title' => 'Testing and Database',
+        'image' => 'images/dedy.jepg',
+        'nim' => '2311103138',
         'kelas' => 'SI07-E',
-        'email' => '2311103073@ittelkom-pwt.ac.id'
+        'email' => '2311103138@ittelkom-pwt.ac.id'
     ],
     [
         'name' => 'Mike Ross',
