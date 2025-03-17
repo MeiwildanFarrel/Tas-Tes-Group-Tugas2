@@ -9,12 +9,12 @@ $anggotaTim = [
         'email' => '2311103073@ittelkom-pwt.ac.id'
     ],
     [
-        'name' => 'Mike Ross',
-        'title' => 'Art Director',
-        'image' => 'images/mike.jpg',
-        'nim' => '2311103074',
+        'name' => 'Jaiz Cahya Prasetya',
+        'title' => 'Backend Developer',
+        'image' => 'images/jaizz.jpg',
+        'nim' => '2311103059',
         'kelas' => 'SI07-E',
-        'email' => '2311103074@ittelkom-pwt.ac.id'
+        'email' => '2311103059@ittelkom-pwt.ac.id'
     ],
     [
         'name' => 'John Doe',
@@ -106,36 +106,18 @@ $anggotaTim = [
             <br>
 
             <div class="row">
+                <?php foreach ($anggotaTim as $anggota) : ?>
                 <div class="column">
                     <div class="card">
-                        <img src="<?php echo $anggotaTim[0]['image']; ?>" alt="<?php echo $anggotaTim[0]['name']; ?>" style="width:100%">
+                        <img src="<?php echo $anggota['image']; ?>" alt="<?php echo $anggota['name']; ?>" style="width:100%">
                         <div class="container">
-                            <h2><?php echo $anggotaTim[0]['name']; ?></h2>
-                            <h3 class="title"><?php echo $anggotaTim[0]['title']; ?></h3>
-                            <p><button onclick="tampilAnggota('<?php echo $anggotaTim[0]['name']; ?>', '<?php echo $anggotaTim[0]['nim']; ?>', '<?php echo $anggotaTim[0]['kelas']; ?>', '<?php echo $anggotaTim[0]['email']; ?>')" class="button">Contact</button></p>
+                            <h2><?php echo $anggota['name']; ?></h2>
+                            <h3 class="title"><?php echo $anggota['title']; ?></h3>
+                            <p><button onclick="tampilAnggota('<?php echo $anggota['name']; ?>', '<?php echo $anggota['nim']; ?>', '<?php echo $anggota['kelas']; ?>', '<?php echo $anggota['email']; ?>')" class="button">Contact</button></p>
                         </div>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="card">
-                        <img src="<?php echo $anggotaTim[1]['image']; ?>" alt="<?php echo $anggotaTim[1]['name']; ?>" style="width:100%">
-                        <div class="container">
-                            <h2><?php echo $anggotaTim[1]['name']; ?></h2>
-                            <h3 class="title"><?php echo $anggotaTim[1]['title']; ?></h3>
-                            <p><button onclick="tampilAnggota('<?php echo $anggotaTim[1]['name']; ?>', '<?php echo $anggotaTim[1]['nim']; ?>', '<?php echo $anggotaTim[1]['kelas']; ?>', '<?php echo $anggotaTim[1]['email']; ?>')" class="button">Contact</button></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <img src="<?php echo $anggotaTim[2]['image']; ?>" alt="<?php echo $anggotaTim[2]['name']; ?>" style="width:100%">
-                        <div class="container">
-                            <h2><?php echo $anggotaTim[2]['name']; ?></h2>
-                            <h3 class="title"><?php echo $anggotaTim[2]['title']; ?></h3>
-                            <p><button onclick="tampilAnggota('<?php echo $anggotaTim[2]['name']; ?>', '<?php echo $anggotaTim[2]['nim']; ?>', '<?php echo $anggotaTim[2]['kelas']; ?>', '<?php echo $anggotaTim[2]['email']; ?>')" class="button">Contact</button></p>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </section>
     </main>
