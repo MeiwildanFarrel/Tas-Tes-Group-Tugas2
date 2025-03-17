@@ -17,12 +17,12 @@ $anggotaTim = [
         'email' => '2311103059@ittelkom-pwt.ac.id'
     ],
     [
-        'name' => 'John Doe',
-        'title' => 'Designer',
-        'image' => 'images/john.jpg',
-        'nim' => '2311103075',
+        'name' => 'Meiwildan Muhammad Farrel',
+        'title' => 'UI/UX Designer and Server',
+        'image' => 'images/farrel.jpg',
+        'nim' => '2311103073',
         'kelas' => 'SI07-E',
-        'email' => '2311103075@ittelkom-pwt.ac.id'
+        'email' => '2311103073@ittelkom-pwt.ac.id'
     ]
 ];
 ?>
