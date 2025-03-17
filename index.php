@@ -3,7 +3,7 @@ $anggotaTim = [
     [
         'name' => 'Dedy Tigor Manurung',
         'title' => 'Testing and Database',
-        'image' => 'images/dedy.jepg',
+        'image' => 'images/dedy.jpeg',
         'nim' => '2311103138',
         'kelas' => 'SI07-E',
         'email' => '2311103138@ittelkom-pwt.ac.id'
